@@ -1,0 +1,73 @@
+{
+    "arabica": [
+        {
+            "nama": "Kopi Arabika Sidikalang",
+            "size": "1.000 Gram",
+            "harga": "165.000",
+            "foto": "https://rikikurnia.com/prakerja/api/img/1.jpg",
+            "link": "https://www.tokopedia.com/sopic-store/kopi-arabika-sidikalang-1000-gr-biji"
+        },
+        {
+            "nama": "Kopi Arabica Aceh Gayo Super",
+            "size": "500 Gram",
+            "harga": "64.350",
+            "foto": "https://rikikurnia.com/prakerja/api/img/2.jpg",
+            "link": "https://www.tokopedia.com/sopic-store/kopi-arabica-aceh-gayo-super-500-gr-bubuk-kasar"
+        }
+    ],
+    "robusta": [
+        {
+            "nama": "Kopi Aceh Robusta Gayo Natural Premium",
+            "size": "250 Gram",
+            "harga": "33.000",
+            "foto": "https://rikikurnia.com/prakerja/api/img/8.jpg",
+            "link": "https://www.tokopedia.com/sopic-store/kopi-aceh-robusta-gayo-natural-premium-250-gr-bubuk-kasar"
+        },
+        {
+            "nama": "Kopi Robusta Natural Sidikalang Premium",
+            "size": "500 Gram",
+            "harga": "53.460",
+            "foto": "https://rikikurnia.com/prakerja/api/img/9.jpg",
+            "link": "https://www.tokopedia.com/sopic-store/kopi-robusta-natural-sidikalang-premium-500-gr-biji"
+        },
+        {
+            "nama": "Affogato",
+            "size": "150 ml",
+            "harga": "47.000",
+            "foto": "https://agirlworthsaving.net/wp-content/uploads/2022/11/Affogato-Recipe-1-scaled-735x919.jpg",
+            "link": "#"
+        }
+    ],
+    "nonkopi": [
+        {
+            "nama": "Cocktail Kits Jar",
+            "size": "700 Gram",
+            "harga": "89.000",
+            "foto": "https://wholefully.com/wp-content/uploads/2021/12/cocktail-kits-jars-bloody-mary-kit.jpg",
+            "link": "https://www.tokopedia.com/jakartagrosirjaya/aice-vanilla-chocolate-sundae-ice-cream-eskrim-800-ml"
+        },
+        {
+            "nama": "Homemade Tea Package",
+            "size": "250 Gram",
+            "harga": "49.900",
+            "foto": "https://i.pinimg.com/564x/d9/93/78/d993784cfc0818230d0ee3f0524f54c8.jpg",
+            "link": "https://www.tokopedia.com/jakartagrosirjaya/aice-vanilla-chocolate-sundae-ice-cream-eskrim-800-ml"
+        }
+    ],
+    "snack": [
+        {
+            "nama": "Brownies Crispy",
+            "size": "150 Gr",
+            "harga": "35.000",
+            "link": "#",
+            "foto": "https://img.freepik.com/premium-photo/crispy-thin-brownies-with-almond_485743-7.jpg"
+        },
+        {
+            "nama": "Dutch Stroop Waffles",
+            "size": "300 Gr",
+            "harga": "135.000",
+            "link": "#",
+            "foto": "https://cdn.shopify.com/s/files/1/0276/3748/1545/files/Mixed_Nut_Stroopwafel-2_600x600.jpg?v=1628018013"
+        }
+    ]
+}
