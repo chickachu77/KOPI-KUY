@@ -340,8 +340,8 @@ maka akan menghasilkan efek animasi yang smooth
 div.produk img:hover {
 
    /* membuat transformasi, bisa berupa scale(1.05), rotate(180deg), translateY(-50px), dsb */
-   transform: scale(0.9);
-   border-radius: 50%;
+   transform: rotate(10deg);
+   border-radius: 20%;
 }
 
 div.produk p {
@@ -441,7 +441,6 @@ div.team img {
    box-shadow: 0 3px 10px -2px #000;
    border-radius: 50px 0px 50px 0px;
    margin-bottom: 10px;
-   transform: rotate(10deg);
    animation: goyang 2s infinite;
 }
 
