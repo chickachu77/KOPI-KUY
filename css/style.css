@@ -52,7 +52,7 @@ dengan memberi nama family, maka kita mendaftarkan font tersebut ke dalam websit
 */
 
 @font-face {
-   src: url(https: //fonts.gstatic.com/s/irishgrover/v23/buExpoi6YtLz2QW7LA4flVgv__RP.woff2);
+   src: url(https://fonts.gstatic.com/s/irishgrover/v23/buExpoi6YtLz2QW7LA4flVgv__RP.woff2);
    font-family: 'Irish Grover';
 }
 
@@ -169,7 +169,7 @@ nav {
 
 img.logo {
    /* height mengatur tinggi elemen */
-   height: 40px;
+   height: 60px;
    /* penjelasan margin mirip dengan padding, fungsinya untuk memberi jarak pada elemen */
    margin-left: 20px;
 }
@@ -186,7 +186,7 @@ nav a {
 }
 
 a.shop {
-   margin-right: 100px;
+   margin-right: 30px;
 }
 
 a.chat {
@@ -245,7 +245,7 @@ header p {
 }
 
 div.olshop img {
-   width: 100px;
+   width: 75px;
    /* aspect-ratio:1 agar tinggi menyesuaikan width */
    aspect-ratio: 1;
    margin-right: 10px;
@@ -323,7 +323,7 @@ div.produk img {
    transition: all 0.3s ease;
 
    /* border-radius  Membuat sudut membulat */
-   border-radius: 15px;
+   border-radius: 60px;
 
    /* box-shadow membuat efek bayangan */
    box-shadow: 0 3px 10px -2px #000;
@@ -394,6 +394,20 @@ section.about-us p:nth-child(4) {
 
 /* OUR TEAM */
 
+@keyframes goyang {
+   0% {
+      transform: rotate(10deg)
+   }
+
+   50% {
+      transform: rotate(-10deg)
+   }
+
+   100% {
+      transform: rotate(10deg)
+   }
+}
+
 section.our-team {
    background-color: #EEE6DC;
    box-shadow: inset 0px 0px 23px -6px #707070;
@@ -428,6 +442,7 @@ div.team img {
    border-radius: 50px 0px 50px 0px;
    margin-bottom: 10px;
    transform: rotate(10deg);
+   animation: goyang 2s infinite;
 }
 
 
@@ -471,6 +486,7 @@ div.testimoni {
    padding: 35px 50px;
    box-shadow: 0px 0px 12px -10px #000;
    background-color: #80bb96;
+   min-height: 330px;
 }
 
 div.testimoni img {
@@ -510,7 +526,7 @@ section.contact-us iframe {
 }
 
 div.kontak {
-   width: 10%;
+   width: 30%;
    /* color mengatur warna tulisan */
    color: green;
    text-align: center;
@@ -522,8 +538,8 @@ div.kontak {
 
 footer {
    background-color: #1cb617;
-   padding-top: 50px;
-   padding-bottom: 50px;
+   padding-top: 30px;
+   padding-bottom: 30px;
    color: #fff;
    padding-right: 40px;
    padding-left: 40px;

@@ -34,6 +34,14 @@
             color: brown;
         }
 
+        .meracik {
+            min-height: 500px;
+        }
+
+        .card-body {
+            min-height: 150px;
+        }
+
         /* Batas Akhir penulisan kode CSS internal */
     </style>
 </head>
@@ -71,6 +79,15 @@
                         <a class="nav-link" href="admin.html">Admin</a>
                     </li>
                 </ul>
+
+                <a href="cart.html" class="btn btn-outline-light position-relative">
+                    <i class="bi bi-cart4"></i>
+                    <span id="cart_icon"
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        0
+                    </span>
+                </a>
+
                 <a class="btn btn-outline-light ms-md-3" href="https://wa.me/6281290465033">
                     <i class="bi bi-whatsapp"></i> Chat</a>
             </div>
@@ -96,7 +113,7 @@
 
             <div id="baris_produk" class="row mt-5">
                 <div class="card text-bg-light">
-                    <img src="images/about-us/meracik kopi.jpg" class="card-img" alt="...">
+                    <img src="images/about-us/meracik kopi.jpg" class="meracik" alt="...">
                 </div>
 
             </div>
@@ -152,7 +169,7 @@
             baris_produk.innerHTML = ``
 
             data_dipilih.forEach(kopi => {
-                baris_produk.innerHTML += `<div class="col-12 col-lg-3 mb-2 mt-4 kolom-produk">
+                baris_produk.innerHTML += `<div class="col-12 col-lg-4 mb-2 mt-4">
                     <div class="card">
                         <img src="${kopi.foto}"
                             class="card-img-top" alt="...">
@@ -166,7 +183,9 @@
                                     ${kopi.harga}
                                 </div>
                             </div>
-                            <a href="${kopi.link}" class="btn btn-success w-100"> <i class="bi bi-cart-check"></i> Beli</a>
+                           <button onclick='addToCart(${JSON.stringify({ nama: kopi.nama, harga: kopi.harga, foto: kopi.foto, hargaint: (kopi.harga.split(".").join("")) * 1, qty: 1 })})' href="${kopi.link}" class="addToCart btn btn-success w-100">
+                                <i class="bi bi-cart4"></i> Add To Cart
+                            </button>
                         </div>
                     </div>
                 </div>`
@@ -174,6 +193,26 @@
 
         }
 
+        var list_belanja = []
+
+        function addToCart(item) {
+            //itemObj = JSON.parse(item)
+            list_belanja.push(item)
+            localStorage.setItem("list_belanja", JSON.stringify(list_belanja))
+            alert("Berhasil Menambah Produk")
+            updateCartIcon()
+        }
+
+        function updateCartIcon() {
+            cart_icon.classList.add("d-none")
+            let list_belanja = localStorage.getItem("list_belanja")
+            if (list_belanja != null) {
+                list_belanja = JSON.parse(list_belanja)
+                cart_icon.textContent = list_belanja.length
+                if (list_belanja.length > 0) cart_icon.classList.remove("d-none")
+            }
+        }
+        updateCartIcon()
 
         /* Batas Akhir penulisan kode Javascript */
     </script>
